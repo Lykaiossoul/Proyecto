@@ -1,0 +1,170 @@
+/*reset de estilos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*fin de reset*/
+
+.contenedor-body {
+    background-color: black;
+}
+
+header {
+    display: grid;
+    padding: 20px;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 15px;
+}
+
+.lgo {
+    grid-column: 1 / 2;
+    justify-self: start;
+    align-self: center;
+}
+
+.lgo img {
+    height: 25vh;
+    width: auto;
+}
+
+.navimg {
+    height: 15vh;
+    width: auto;
+}
+nav {
+    grid-column: 3 / 4;
+}
+
+.navegacion {
+    list-style: none;
+    display: grid;
+    grid-template-areas:
+        "mamiferos reptiles"
+        "artropodos artropodos"
+        "actuaticos aves";
+    justify-items: center;
+    align-items: center;
+}
+
+.titulo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+    justify-items: flex-start;
+}
+
+
+
+
+
+.mamiferos {
+    grid-area: mamiferos;
+}
+
+.reptiles {
+    grid-area: reptiles;
+}
+
+.artropodos {
+    grid-area: artropodos;
+    justify-items: center;
+}
+
+.actuaticos {
+    grid-area: actuaticos;
+}
+
+.aves {
+    grid-area: aves;
+}
+
+.boton-volver {
+    width: 120px;
+    height: 120px;
+}
+
+
+header nav ul li a img {
+    width: 150px;
+    height: 150px;
+
+}
+
+h1 {
+    grid-column: 2 / 3;
+    color: white;
+    font-size: 500%;
+
+}
+
+
+main {
+    color: white;
+}
+
+main section a img {
+    width: 450px;
+    height: 550px;
+}
+
+h3 {
+    font-size: 35px;
+    margin: 15px;
+}
+
+main section a {
+    display: inline-block;
+    margin: 15px;
+}
+
+
+.pregunta-inicio {
+    font-size: 100px;
+    text-align: center;
+}
+
+
+
+.animal-info {
+    display: flex;
+    align-items: flex-start;
+}
+
+.imagen-animal {
+    width: 500px;
+    height: 300px;
+    margin: 30px;
+}
+
+.animal-texto {
+    flex: 1;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    margin: 30px;
+}
+
+footer ul li {
+    font-size: 30px;
+    display: inline-block;
+    margin: 50px;
+}
+
+footer ul li a {
+    color: darkslateblue;
+}
+
+h5 {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
