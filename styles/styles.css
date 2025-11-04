@@ -11,13 +11,6 @@
     background-color: black;
 }
 
-
-.titulo {
-    align-self: center;
-    justify-items: flex-start;
-}
-
-
 .boton-volver {
     width: 120px;
     height: 120px;
