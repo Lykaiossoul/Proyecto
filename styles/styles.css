@@ -11,6 +11,7 @@
     background-color: black;
 }
 
+
 .boton-volver {
     width: 120px;
     height: 120px;
@@ -23,10 +24,6 @@ h1 {
     text-align: center;
 }
 
-
-main {
-    color: white;
-}
 
 main section a img {
     width: 450px;
@@ -77,6 +74,7 @@ p {
     margin: 30px;
 }
 
+
 footer ul li {
     font-size: 30px;
     display: inline-block;
@@ -87,8 +85,10 @@ footer ul li a {
     color: darkslateblue;
 }
 
-h5 {
+h4 {
     color: white;
     font-size: 25px;
     text-align: center;
 }
+
+/* pendiente correccion de margen inferior. */
