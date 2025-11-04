@@ -33,22 +33,23 @@ main section a img {
     height: 550px;
 }
 
+h2 {
+    color: white;
+    font-size: 500%;
+    text-align: center;
+}
+
+.presentacion  {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+}
+
 h3 {
     font-size: 35px;
     margin: 15px;
 }
-
-main section a {
-    display: inline-block;
-    margin: 15px;
-}
-
-
-.pregunta-inicio {
-    font-size: 100px;
-    text-align: center;
-}
-
 
 
 .animal-info {
