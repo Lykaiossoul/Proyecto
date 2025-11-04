@@ -12,87 +12,17 @@
 }
 
 
-header {
-    display: grid;
-    padding: 20px;
-    grid-template-columns: auto 1fr 1fr;
-    grid-template-rows: auto;
-    column-gap: 15px;
-}
-
-.lgo {
-    grid-column: 1 / 2;
-    justify-self: start;
-    align-self: center;
-}
-
-.lgo img {
-    height: 25vh;
-    width: auto;
-}
-
-.navimg {
-    height: 15vh;
-    width: auto;
-}
-nav {
-    grid-column: 3 / 4;
-}
-
-.navegacion {
-    list-style: none;
-    display: grid;
-    grid-template-areas:
-        "mamiferos reptiles"
-        "artropodos artropodos"
-        "actuaticos aves";
-    justify-items: center;
-    align-items: center;
-}
-
 .titulo {
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
     align-self: center;
     justify-items: flex-start;
 }
 
-
-
-
-
-.mamiferos {
-    grid-area: mamiferos;
-}
-
-.reptiles {
-    grid-area: reptiles;
-}
-
-.artropodos {
-    grid-area: artropodos;
-    justify-items: center;
-}
-
-.actuaticos {
-    grid-area: actuaticos;
-}
-
-.aves {
-    grid-area: aves;
-}
 
 .boton-volver {
     width: 120px;
     height: 120px;
 }
 
-
-header nav ul li a img {
-    width: 150px;
-    height: 150px;
-
-}
 
 h1 {
     grid-column: 2 / 3;
