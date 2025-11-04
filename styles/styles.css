@@ -12,10 +12,11 @@
 }
 
 
+/* boton pendiente por agregar
 .boton-volver {
     width: 120px;
     height: 120px;
-}
+} */
 
 
 h1 {
@@ -36,7 +37,9 @@ h2 {
     text-align: center;
 }
 
-.presentacion  {
+/*muestra de animales en grid*/
+
+.presentacion  { 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -92,3 +95,25 @@ h4 {
 }
 
 /* pendiente correccion de margen inferior. */
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+h1  {
+font-size: 150%; /* Incrementa la reducción del tamaño del título */
+}
+
+h2 {
+font-size: 150%; /* Ajusta aún más el tamaño de los subtítulos */
+}
+
+.presentacion {
+grid-template-columns: 1fr; /* Una columna para pantallas pequeñas */
+grid-template-rows: auto;
+}
+
+h3 {
+font-size: 28px; /* Ajusta el tamaño de los encabezados h3 */
+}
+
+}
