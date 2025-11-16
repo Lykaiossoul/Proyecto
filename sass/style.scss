@@ -1,10 +1,11 @@
 // este ser nuestro archivo principal
 @use "variables"; // importamos las variables
 @use "header"; // importamos los estilos del header
-@use "footer"; // importamos los estilos del footer
+
 @use "index"; // importamos los estilos de la pagina principal
 @use "mamiferos"; // importamos los estilos de mamiferos
 @use "aves"; // importamos los estilos de aves  
 @use "reptiles"; // importamos los estilos de reptiles
 @use "peces"; // importamos los estilos de peces
 @use "invertebrados"; // importamos los estilos de invertebrados
+@use "footer"; // importamos los estilos del footer

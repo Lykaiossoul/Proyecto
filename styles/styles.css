@@ -55,4 +55,25 @@ main form button {
   margin: 10px;
 }
 
+footer h4 {
+  font-family: "Oldenburg", serif;
+  font-size: 180%;
+}
+footer p {
+  font-family: "Oldenburg", serif;
+  font-size: 180%;
+}
+footer div {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-content: auto;
+  padding: 20px;
+}
+footer ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
 /*# sourceMappingURL=styles.css.map */

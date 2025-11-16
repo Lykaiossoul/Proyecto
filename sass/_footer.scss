@@ -1,0 +1,28 @@
+@use "variables" as v;
+
+footer {
+    h4 {
+        font-family: v.$fuente-subtitulos;
+        font-size: 180%
+    }
+
+    p {
+        font-family: v.$fuente-subtitulos;
+        font-size: 180%;
+    }
+
+
+    div {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: auto;
+        padding: 20px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+}
