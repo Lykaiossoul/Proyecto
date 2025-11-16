@@ -1,2 +1,9 @@
 // aqui va ir todo el codigo de css y sass de mi header  y su repsonsive 
 @use "variables" as v;
+
+header {
+    background-color: v.$background;
+    h1 {text-align: center;
+        font-size: 500%;
+        color: v.$fuente-primaria;}
+}

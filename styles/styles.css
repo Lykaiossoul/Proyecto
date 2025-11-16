@@ -5,4 +5,13 @@
   Box-sizing: border-box;
 }
 
+header {
+  background-color: black;
+}
+header h1 {
+  text-align: center;
+  font-size: 500%;
+  color: white;
+}
+
 /*# sourceMappingURL=styles.css.map */
