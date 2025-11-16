@@ -55,16 +55,19 @@ main form button {
   margin: 10px;
 }
 
-.animal-info {
+section {
+  margin-bottom: 100px;
+}
+section .animal-info {
   display: flex;
   align-items: flex-start;
 }
-.animal-info .imagen-animal {
+section .imagen-animal {
   width: 500px;
   height: 300px;
   margin: 30px;
 }
-.animal-info .animal-texto {
+section .animal-texto {
   flex: 1;
 }
 

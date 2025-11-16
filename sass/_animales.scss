@@ -1,8 +1,12 @@
 //aqui esta el tamaño de todas las imagenes y la orden de su texto
 
-.animal-info {
-    display: flex;
-    align-items: flex-start;
+section {
+    margin-bottom: 100px;
+
+    .animal-info {
+        display: flex;
+        align-items: flex-start;
+    }
 
     .imagen-animal {
         width: 500px;
@@ -15,4 +19,5 @@
         flex: 1;
     }
 
+    //problemas para modificar tamaño a "nombre cientifico", pendiente
 }
