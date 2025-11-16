@@ -3,7 +3,14 @@
 
 header {
     background-color: v.$background;
-    h1 {text-align: center;
+
+    h1 {
+        text-align: center;
         font-size: 500%;
-        color: v.$fuente-primaria;}
+        color: v.$fuente-primaria;
+        font-family: v.$fuente-titulos;
+        font-weight: 400;
+        font-style: normal;
+
+    }
 }

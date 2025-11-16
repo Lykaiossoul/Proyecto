@@ -1,5 +1,8 @@
 //espacio para fuentes futuras
+@import url('https://fonts.googleapis.com/css2?family=Oldenburg&family=Pangolin&display=swap');
 
+$fuente-titulos: "Pangolin", cursive;
+$fuente-subtitulos: "Oldenburg", serif; 
 $background: black;
 $fuente-primaria: white;
 
@@ -8,6 +11,7 @@ $fuente-primaria: white;
 	Margin: 0;
 	Padding: 0;
 	Box-sizing: border-box;
+    
 }
 
 //futuros extend y mixins
