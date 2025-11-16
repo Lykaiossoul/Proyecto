@@ -55,6 +55,19 @@ main form button {
   margin: 10px;
 }
 
+.animal-info {
+  display: flex;
+  align-items: flex-start;
+}
+.animal-info .imagen-animal {
+  width: 500px;
+  height: 300px;
+  margin: 30px;
+}
+.animal-info .animal-texto {
+  flex: 1;
+}
+
 footer h4 {
   font-family: "Oldenburg", serif;
   font-size: 180%;
