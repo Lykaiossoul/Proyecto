@@ -11,9 +11,10 @@ body {
 }
 body header h1 {
   text-align: center;
-  font-size: 500%;
+  font-size: 700%;
   color: white;
   font-family: "Pangolin", cursive;
+  margin: 20px;
 }
 
 main h2 {
