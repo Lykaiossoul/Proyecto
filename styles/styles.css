@@ -6,10 +6,10 @@
   Box-sizing: border-box;
 }
 
-header {
+body {
   background-color: black;
 }
-header h1 {
+body header h1 {
   text-align: center;
   font-size: 500%;
   color: white;
