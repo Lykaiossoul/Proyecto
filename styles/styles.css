@@ -35,7 +35,23 @@ main .presentacion {
 }
 main h3 {
   font-family: "Oldenburg", serif;
-  margin-left: 50px;
+  text-align: center;
+  margin: 20px;
+}
+main form {
+  margin-left: 80px;
+  margin-right: 80px;
+}
+main form div {
+  margin: 10px;
+}
+main form div label {
+  font-family: "Oldenburg", serif;
+  font-size: 150%;
+  margin-bottom: 10px;
+}
+main form button {
+  margin: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

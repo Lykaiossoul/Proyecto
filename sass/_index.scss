@@ -24,5 +24,19 @@ main {
     
     h3{
         font-family: v.$fuente-subtitulos;
-    margin-left: 50px;}
+        text-align: center;
+    margin: 20px;}
+    form { 
+        margin-left: 80px;
+        margin-right: 80px;
+        div {
+            margin: 10px;
+            label {
+                font-family: v.$fuente-subtitulos;
+                font-size: 150%;
+                margin-bottom: 10px;
+            }
+        }
+        button { margin: 10px;}
+    }
 }
