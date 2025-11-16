@@ -2,17 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Oldenburg&family=Pangolin&display=swap');
 
 $fuente-titulos: "Pangolin", cursive;
-$fuente-subtitulos: "Oldenburg", serif; 
+$fuente-subtitulos: "Oldenburg", serif;
 $background: black;
 $fuente-primaria: white;
 
-*{
+* {
 	Color: $fuente-primaria;
 	Margin: 0;
 	Padding: 0;
 	Box-sizing: border-box;
-    
+}
+
+//mixin mobile 
+
+@mixin mobile {
+	@media (min-width: 320px) and (max-width: 430px) {
+		@content;
+	}
 }
 
 //futuros extend y mixins
-

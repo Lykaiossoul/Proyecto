@@ -3,6 +3,7 @@
 
 body {
     background-color: v.$background;
+
     header {
         h1 {
             text-align: center;
@@ -10,6 +11,14 @@ body {
             color: v.$fuente-primaria;
             font-family: v.$fuente-titulos;
             margin: 20px;
+        }
+    }
+
+    //responsive problemas de header
+    @include v.mobile {
+
+        h1 {
+            font-size: 100%;
         }
     }
 }

@@ -25,4 +25,12 @@ footer {
         flex-wrap: nowrap;
         justify-content: space-evenly;
     }
+
+    //responsive problemas de footer
+    
+    @include v.mobile {
+        div {
+            flex-direction: column;
+        }
+            }
 }

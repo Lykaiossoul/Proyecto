@@ -16,6 +16,11 @@ body header h1 {
   font-family: "Pangolin", cursive;
   margin: 20px;
 }
+@media (min-width: 320px) and (max-width: 430px) {
+  body h1 {
+    font-size: 100%;
+  }
+}
 
 main h2 {
   font-family: "Oldenburg", serif;
@@ -90,6 +95,11 @@ footer ul {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  footer div {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
