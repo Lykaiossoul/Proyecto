@@ -7,10 +7,14 @@ $background: black;
 $fuente-primaria: white;
 
 * {
-	Color: $fuente-primaria;
-	Margin: 0;
-	Padding: 0;
-	Box-sizing: border-box;
+	color: $fuente-primaria;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $background;
 }
 
 //mixin mobile 
