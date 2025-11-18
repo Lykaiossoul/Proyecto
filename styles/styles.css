@@ -47,7 +47,7 @@ main img {
   width: 450px;
   height: 550px;
 }
-main img:hover {
+main .presentacion img:hover {
   transform: scale(0.85);
   transition: transform 1s ease;
 }
