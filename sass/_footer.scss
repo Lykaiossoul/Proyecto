@@ -42,4 +42,17 @@ footer {
             gap: 10px;
         }
     }
+    @include v.tablet {
+        div {
+            flex-direction: column;
+            align-items: center;
+            font-size: 70%;
+        }
+
+        ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+    }
 }
