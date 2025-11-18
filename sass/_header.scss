@@ -12,7 +12,7 @@ header {
 }
 
 //responsive problemas de header
-@include mobile {
+@include v.mobile {
     h1 {
         font-size: 100%; //tamaño para celular
     }

@@ -17,6 +17,24 @@ body {
 	background-color: $background;
 }
 
+
+// $normal-width: 450px; // Ancho normal de la imagen
+// $normal-height: 550px; // Altura normal de la imagen
+// $hover-width: 315px;   // Ancho al pasar el mouse (70% de 450px)
+// $hover-height: 385px;  // Altura al pasar el mouse (70% de 550px)
+
+// @mixin hover-transform($normal-width, $normal-height, $hover-width, $hover-height) {
+// transition: transform 5s ease, width 5s ease, height 5s ease; // Transición suave
+// width: $normal-width; // Establece el ancho normal
+// height: $normal-height; // Establece la altura normal
+
+// &:hover {
+// transform: scale(0.85) translate(-7.5%, -7.5%); // Escala y traslada para centrar
+// width: $hover-width; // Establece el nuevo ancho
+// height: $hover-height; // Establece la nueva altura
+// }
+// }
+
 //mixin mobile 
 
 @mixin mobile {

@@ -14,12 +14,26 @@ main {
         height: 550px;
     }
 
+    img:hover {
+        transform: scale(0.85);
+        transition: transform 1s ease;
+    }
+
+    //     img {
+    //         width: 450px;
+    //         height: 550px;
+    //        @include v.hover-transform(v.$normal-width, v.$normal-height, v.$hover-width, v.$hover-height); // Llama al mixin con las variables
+    // height: auto;  // Mantiene la proporción de la imagen
+    // margin: 0 auto; // Centra la imagen en su contenedor
+    //     }
+
     .presentacion {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         gap: 20px;
         margin: 30px;
+
     }
 
     h3 {
