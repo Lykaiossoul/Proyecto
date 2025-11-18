@@ -61,29 +61,6 @@ main {
         }
     }
 
-    @include v.mobile {
-        h2 {
-            text-align: center;
-            margin: 20px;
-            font-size: 250%;
-        }
-
-        .presentacion {
-            grid-template-columns: 1fr;
-        }
-
-        img {
-            width: 70vw;
-            /* 70% del ancho de la ventana */
-            height: 80vw;
-            /* Mantiene la proporción de la imagen */
-            margin: 1vh 2vw;
-            /* Margen de 1% de la altura de la ventana y 2% del ancho */
-            pointer-events: none;
-            /* Desactiva los eventos de puntero, deshabilitando el hover */
-        }
-    }
-
     @include v.tablet {
         h2 {
             text-align: center;
@@ -99,6 +76,29 @@ main {
             width: 40vw;
             /* 40% del ancho de la ventana */
             height: 50vw;
+            /* Mantiene la proporción de la imagen */
+            margin: 1vh 2vw;
+            /* Margen de 1% de la altura de la ventana y 2% del ancho */
+            pointer-events: none;
+            /* Desactiva los eventos de puntero, deshabilitando el hover */
+        }
+    }
+
+    @include v.mobile {
+        h2 {
+            text-align: center;
+            margin: 20px;
+            font-size: 250%;
+        }
+
+        .presentacion {
+            grid-template-columns: 1fr;
+        }
+
+        img {
+            width: 70vw;
+            /* 70% del ancho de la ventana */
+            height: 80vw;
             /* Mantiene la proporción de la imagen */
             margin: 1vh 2vw;
             /* Margen de 1% de la altura de la ventana y 2% del ancho */

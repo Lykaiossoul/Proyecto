@@ -35,6 +35,14 @@ body {
 // }
 // }
 
+//mixin tablet
+@mixin tablet {
+	@media (min-width: 431px) and (max-width: 768px) {
+		@content;
+	}
+}
+
+
 //mixin mobile 
 
 @mixin mobile {
@@ -44,9 +52,3 @@ body {
 }
 
 // objetivo lograr que el logo quede visible en la nav-bar, para dispositivos moviles, y que no se tenga que abrir la barra menu
-
-@mixin tablet {
-	@media (min-width: 431px) and (max-width: 768px) {
-		@content;
-	}
-}
