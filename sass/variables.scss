@@ -43,4 +43,10 @@ body {
 	}
 }
 
-//futuros extend y mixins
+// objetivo lograr que el logo quede visible en la nav-bar, para dispositivos moviles, y que no se tenga que abrir la barra menu
+
+@mixin tablet {
+	@media (min-width: 431px) and (max-width: 768px) {
+		@content;
+	}
+}
