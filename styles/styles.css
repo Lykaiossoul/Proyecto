@@ -28,6 +28,15 @@ header h1 {
     height: auto;
   }
 }
+@media (min-width: 431px) and (max-width: 768px) {
+  header h1 {
+    font-size: 400%;
+  }
+  .navbar-brand img {
+    width: 100px;
+    height: auto;
+  }
+}
 main h2 {
   font-family: "Oldenburg", serif;
   text-align: center;
