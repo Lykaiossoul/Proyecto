@@ -20,8 +20,8 @@ header h1 {
 }
 
 @media (min-width: 320px) and (max-width: 430px) {
-  h1 {
-    font-size: 100%;
+  header h1 {
+    font-size: 300%;
   }
 }
 main h2 {
@@ -75,9 +75,12 @@ main form button {
     grid-template-columns: 1fr;
   }
   main img {
-    width: 80vw; /* 80% del ancho de la ventana */
-    height: auto; /* Mantiene la proporción de la imagen */
-    margin: 1vh 2vw; /* Margen de 1% de la altura de la ventana y 2% del ancho */
+    width: 80vw;
+    /* 80% del ancho de la ventana */
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    margin: 1vh 2vw;
+    /* Margen de 1% de la altura de la ventana y 2% del ancho */
   }
 }
 
