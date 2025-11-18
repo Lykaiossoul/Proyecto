@@ -60,4 +60,19 @@ main {
             margin: 10px;
         }
     }
+    @include v.mobile {
+        h2 {
+            text-align: center;
+        margin: 20px;
+            font-size: 250%;
+        }
+        .presentacion {
+            grid-template-columns: 1fr;
+        }
+        img {
+width: 80vw; /* 80% del ancho de la ventana */
+height: auto; /* Mantiene la proporción de la imagen */
+margin: 1vh 2vw; /* Margen de 1% de la altura de la ventana y 2% del ancho */
+}
+    }
 }
