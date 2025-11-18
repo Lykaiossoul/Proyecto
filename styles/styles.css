@@ -94,6 +94,28 @@ main form button {
     /* Mantiene la proporción de la imagen */
     margin: 1vh 2vw;
     /* Margen de 1% de la altura de la ventana y 2% del ancho */
+    pointer-events: none;
+    /* Desactiva los eventos de puntero, deshabilitando el hover */
+  }
+}
+@media (min-width: 431px) and (max-width: 768px) {
+  main h2 {
+    text-align: center;
+    margin: 20px;
+    font-size: 300%;
+  }
+  main .presentacion {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  main img {
+    width: 40vw;
+    /* 40% del ancho de la ventana */
+    height: 50vw;
+    /* Mantiene la proporción de la imagen */
+    margin: 1vh 2vw;
+    /* Margen de 1% de la altura de la ventana y 2% del ancho */
+    pointer-events: none;
+    /* Desactiva los eventos de puntero, deshabilitando el hover */
   }
 }
 
