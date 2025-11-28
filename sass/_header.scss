@@ -9,6 +9,13 @@ header {
         font-family: v.$fuente-titulos;
         margin: 20px;
     }
+    .nav-horizontal {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+    }
 }
 
 //responsive problemas de header
