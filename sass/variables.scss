@@ -35,6 +35,13 @@ body {
 // }
 // }
 
+//mixin pantalla-standar
+@mixin pantalla-standar {
+	@media (min-width: 1024px) and (max-width: 1440px) {
+		@content;
+	}
+}
+
 //mixin tablet
 @mixin tablet {
 	@media (min-width: 431px) and (max-width: 768px) {
