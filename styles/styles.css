@@ -25,12 +25,24 @@ header .nav-horizontal {
   justify-content: space-around;
   gap: 10px;
 }
-
+@media (min-width: 1024px) and (max-width: 1366px) {
+  header h1 {
+    font-size: 600%;
+  }
+  header .nav-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 40px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
 @media (min-width: 431px) and (max-width: 768px) {
   header h1 {
     font-size: 400%;
   }
-  .navbar-brand img {
+  header .navbar-brand img {
     width: 100px;
     height: auto;
   }
@@ -39,11 +51,12 @@ header .nav-horizontal {
   header h1 {
     font-size: 300%;
   }
-  .navbar-brand img {
+  header .navbar-brand img {
     width: 80px;
     height: auto;
   }
 }
+
 main h2 {
   font-family: "Oldenburg", serif;
   text-align: center;
@@ -84,6 +97,11 @@ main form div label {
 }
 main form button {
   margin: 10px;
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  main .presentacion {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 431px) and (max-width: 768px) {
   main h2 {

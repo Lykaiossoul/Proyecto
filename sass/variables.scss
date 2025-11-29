@@ -37,7 +37,7 @@ body {
 
 //mixin pantalla-standar
 @mixin pantalla-standar {
-	@media (min-width: 1024px) and (max-width: 1440px) {
+	@media (min-width: 1024px) and (max-width: 1366px) {
 		@content;
 	}
 }

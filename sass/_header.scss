@@ -9,6 +9,7 @@ header {
         font-family: v.$fuente-titulos;
         margin: 20px;
     }
+
     .nav-horizontal {
         display: flex;
         flex-direction: row;
@@ -16,29 +17,45 @@ header {
         justify-content: space-around;
         gap: 10px;
     }
-}
 
-//responsive problemas de header
 
-@include v.tablet {
-    header h1 {
-        font-size: 400%;
+    //responsive problemas de header
+
+    @include v.pantalla-standar {
+        h1 {
+            font-size: 600%;
+        }
+
+        .nav-horizontal {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px 40px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
     }
 
-    .navbar-brand img {
-        width: 100px;
-        height: auto;
-    }
-}
+    @include v.tablet {
+        h1 {
+            font-size: 400%;
+        }
 
-@include v.mobile {
-    header h1 {
-        font-size: 300%;
-    }
-
-    .navbar-brand img {
-        width: 80px;
-        height: auto;
+        .navbar-brand img {
+            width: 100px;
+            height: auto;
+        }
     }
 
+    @include v.mobile {
+        h1 {
+            font-size: 300%;
+        }
+
+        .navbar-brand img {
+            width: 80px;
+            height: auto;
+        }
+
+    }
 }
