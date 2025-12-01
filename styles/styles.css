@@ -79,6 +79,7 @@ main .presentacion {
   margin: 30px;
 }
 main h3 {
+  font-size: 250%;
   font-family: "Oldenburg", serif;
   text-align: center;
   margin: 20px;
@@ -213,7 +214,7 @@ section .animal-texto {
   color: black;
   font-weight: bold;
   background-color: #876146;
-  max-width: 70%;
+  max-width: 75%;
   width: fit-content;
   transform: translateY(30px);
 }
