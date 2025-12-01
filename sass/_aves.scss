@@ -1,0 +1,41 @@
+@use "variables" as v;
+
+
+.imagen-ave-carrusel {
+    max-width: 70%; /* Ajusta el ancho máximo a un porcentaje de su contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    margin: 0 auto; /* Centra la imagen en su contenedor */
+
+}
+
+#carouselExampleFade {
+    max-width: 1400px; /* El mismo tamaño que querías para tu imagen */
+    margin: 0 auto;
+}
+
+.nombre-cientifico {
+    font-style: italic;
+    font-size: 200%;
+    margin: 5px auto;
+    font-family: v.$fuente-subtitulos;
+    // -webkit-text-stroke: 0.2px v.$fuente-primaria;
+    color: v.$fuente-secundaria;
+    font-weight: bold;
+    background-color: #876146;
+    max-width: 70%;
+    width: fit-content;
+    transform: translateY(30px);
+}
+
+
+// .descripcion-carrusel {
+//     font-size: 200%;
+//     font-family: v.$fuente-subtitulos;
+//     font-weight: bold;
+//     color: v.$fuente-primaria;
+//     margin: 0 auto 10px auto;
+//     line-height: 1;
+//     background-color: black;
+//     width: fit-content
+
+// }

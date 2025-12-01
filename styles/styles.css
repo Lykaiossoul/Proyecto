@@ -194,6 +194,30 @@ section .animal-texto {
   }
 }
 
+.imagen-ave-carrusel {
+  max-width: 70%; /* Ajusta el ancho máximo a un porcentaje de su contenedor */
+  height: auto; /* Mantiene la proporción original de la imagen */
+  margin: 0 auto; /* Centra la imagen en su contenedor */
+}
+
+#carouselExampleFade {
+  max-width: 1400px; /* El mismo tamaño que querías para tu imagen */
+  margin: 0 auto;
+}
+
+.nombre-cientifico {
+  font-style: italic;
+  font-size: 200%;
+  margin: 5px auto;
+  font-family: "Oldenburg", serif;
+  color: black;
+  font-weight: bold;
+  background-color: #876146;
+  max-width: 70%;
+  width: fit-content;
+  transform: translateY(30px);
+}
+
 footer h4 {
   font-family: "Oldenburg", serif;
   font-size: 180%;
