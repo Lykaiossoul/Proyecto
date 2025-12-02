@@ -40,6 +40,12 @@
 
 // }
 
+@include v.pantalla-standar {
+    .nombre-cientifico {
+        font-size: 150%;
+    }
+}
+
 @include v.tablet {
     .nombre-cientifico {
         font-size: 100%;

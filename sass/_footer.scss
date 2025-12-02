@@ -27,7 +27,12 @@ footer {
         justify-content: space-evenly;
     }
 
-    //responsive problemas de footer
+    @include v.pantalla-standar {
+        div { padding: 20px 80px;
+        h4 {font-size: 130%;}
+    p{ font-size: 130%; }}
+    }    
+
     @include v.tablet {
         div {
             flex-direction: column;
