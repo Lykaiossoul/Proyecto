@@ -235,6 +235,21 @@ section .animal-texto {
     transform: translateY(40px);
   }
 }
+.grid-votacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 10px;
+  margin: 40px 80px;
+  justify-items: center;
+  align-items: center;
+}
+
+.imagen-votacion {
+  width: 500px;
+  height: auto;
+}
+
 footer h4 {
   font-family: "Oldenburg", serif;
   font-size: 180%;
