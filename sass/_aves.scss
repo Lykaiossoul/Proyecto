@@ -39,3 +39,16 @@
 //     width: fit-content
 
 // }
+
+@include v.tablet {
+    .nombre-cientifico {
+        font-size: 100%;
+    }
+}
+
+@include v.mobile {
+    .nombre-cientifico {
+        font-size: 50%;
+        transform: translateY(40px)
+    }
+}

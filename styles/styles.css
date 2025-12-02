@@ -219,6 +219,17 @@ section .animal-texto {
   transform: translateY(30px);
 }
 
+@media (min-width: 431px) and (max-width: 768px) {
+  .nombre-cientifico {
+    font-size: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  .nombre-cientifico {
+    font-size: 50%;
+    transform: translateY(40px);
+  }
+}
 footer h4 {
   font-family: "Oldenburg", serif;
   font-size: 180%;
