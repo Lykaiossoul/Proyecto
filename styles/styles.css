@@ -235,6 +235,31 @@ section .animal-texto {
     transform: translateY(40px);
   }
 }
+.boton-votacion {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-items: center;
+}
+.boton-votacion .btn-votar {
+  background-color: steelblue;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.boton-votacion .btn-votar:hover {
+  background-color: #2F8A8A;
+}
+.boton-votacion .btn-votar:active {
+  transform: translateY(2px);
+}
+
 .grid-votacion {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -300,25 +325,26 @@ section .animal-texto {
   .grid-votacion label:hover figcaption {
     background-color: steelblue;
   }
-  .grid-votacion img {
+  .grid-votacion figure img {
     width: 100%;
-    align-self: center;
-    object-position: center;
+    height: 100%;
+    display: block;
+    margin: 0;
   }
 }
 @media (min-width: 320px) and (max-width: 430px) {
   .grid-votacion {
-    width: 100%;
-    margin: 10px auto;
+    grid-template-columns: 1fr;
     gap: 10px;
+  }
+  .grid-votacion figure img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
   }
   .grid-votacion label:hover figcaption {
     background-color: steelblue;
-  }
-  .grid-votacion img {
-    width: 100%;
-    align-self: center;
-    object-position: center;
   }
 }
 
