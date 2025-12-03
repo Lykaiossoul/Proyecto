@@ -241,7 +241,7 @@ section .animal-texto {
   gap: 25px;
   margin: 40px;
   justify-items: center;
-  align-items: center;
+  align-items: start;
 }
 .grid-peces-record img {
   width: 100%;
@@ -253,6 +253,21 @@ section .animal-texto {
   font-family: "Oldenburg", serif;
   font-size: 1.3em;
   margin-top: 10px;
+}
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .grid-peces-record figcaption {
+    font-size: 1.2em;
+  }
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  .grid-peces-record {
+    grid-template-columns: 1fr;
+    margin: 20px;
+    gap: 10px;
+  }
+  .grid-peces-record figcaption {
+    font-size: 1em;
+  }
 }
 
 .zona-votacion {

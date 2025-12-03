@@ -6,7 +6,7 @@
     gap: 25px;
     margin: 40px;;
     justify-items: center;
-    align-items: center;
+    align-items: start;
 
 
     img {
@@ -21,4 +21,21 @@
         font-size: 1.3em;
         margin-top: 10px;
     }
+
+    @include v.pantalla-standar {
+    figcaption {
+        font-size: 1.2em;
+    }
 }
+
+@include v.mobile {
+    grid-template-columns: 1fr;
+    margin: 20px;
+    gap: 10px;
+
+    figcaption {
+        font-size: 1em;
+    }
+}
+}
+
