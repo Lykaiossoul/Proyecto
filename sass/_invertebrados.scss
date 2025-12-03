@@ -21,7 +21,7 @@
 
         // Hover accion de cambiar el cursor al pasar sobre la tarjeta
         &:hover figcaption {
-            background-color: v.$color-hover; // Color gris claro
+            background-color: v.$color-hover; 
         }
     }
 
@@ -31,8 +31,7 @@
         position: relative;
         border-radius: 10px;
         overflow: hidden;
-        height: 100%; 
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1); // Sombra suave
+        height: 100%;  
 
         // Flexbox para ordenar foto y texto
         display: flex;
@@ -67,7 +66,6 @@
                 // EFECTO SELECCIONADO
                 box-shadow: 0 0 0 4px v.$color-verde; // el color del borde al momento de ser seleccionado
                 transform: scale(1.02); 
-                z-index: 10; // Para que quede encima si se agranda
 
                 figcaption {
                     background-color: v.$color-verde; // el color al momento de ser seleccionado
@@ -81,4 +79,41 @@
             }
         }
     }
+    @include v.tablet {
+        // En tablet el espacio es poco. reducir margenes.
+        width: 95%; 
+        margin: 20px auto; // Un poco menos de margen vertical
+        // hacer mas estrecho en tablets.
+        gap: 15px; 
+
+        label:hover figcaption {
+            background-color: steelblue; // Vuelve al color original
+        }
+
+        img {
+            width: 100%;             // 1. Asegura que llene el ancho del contenedor
+            align-self: center;      // 2. Alínea el elemento imagen al centro del flex (figure)
+            object-position: center; // 3. IMPORTANTE: Centra el recorte de la foto
+        }
+        }
+
+        @include v.mobile {
+            // En mobile el espacio es muy poco. reducir margenes.
+            width: 100%; 
+            margin: 10px auto; // Un poco menos de margen vertical
+            // hacer mas estrecho en tablets.
+            gap: 10px; 
+
+            label:hover figcaption {
+                background-color: steelblue; // Vuelve al color original
+            }
+
+            img {
+                width: 100%;             // 1. Asegura que llene el ancho del contenedor
+                align-self: center;      // 2. Alínea el elemento imagen al centro del flex (figure)
+                object-position: center; // 3. IMPORTANTE: Centra el recorte de la foto
+            }
+        }
 }
+
+// arreglar un problema de borde negro en tablet

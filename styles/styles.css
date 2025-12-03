@@ -258,7 +258,6 @@ section .animal-texto {
   border-radius: 10px;
   overflow: hidden;
   height: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
 }
@@ -283,7 +282,6 @@ section .animal-texto {
 .grid-votacion .input-oculto:checked + figure {
   box-shadow: 0 0 0 4px #2F8A8A;
   transform: scale(1.02);
-  z-index: 10;
 }
 .grid-votacion .input-oculto:checked + figure figcaption {
   background-color: #2F8A8A;
@@ -292,6 +290,36 @@ section .animal-texto {
   content: " ✔";
   font-weight: bold;
   margin-left: 5px;
+}
+@media (min-width: 431px) and (max-width: 768px) {
+  .grid-votacion {
+    width: 95%;
+    margin: 20px auto;
+    gap: 15px;
+  }
+  .grid-votacion label:hover figcaption {
+    background-color: steelblue;
+  }
+  .grid-votacion img {
+    width: 100%;
+    align-self: center;
+    object-position: center;
+  }
+}
+@media (min-width: 320px) and (max-width: 430px) {
+  .grid-votacion {
+    width: 100%;
+    margin: 10px auto;
+    gap: 10px;
+  }
+  .grid-votacion label:hover figcaption {
+    background-color: steelblue;
+  }
+  .grid-votacion img {
+    width: 100%;
+    align-self: center;
+    object-position: center;
+  }
 }
 
 footer h4 {
