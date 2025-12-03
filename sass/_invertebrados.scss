@@ -1,158 +1,162 @@
 @use "variables" as v;
 
-.boton-votacion {
+.zona-votacion {
+    margin-bottom: 40px;
 
-    margin: 0 auto; // Centrado igual que la grilla
-    display: flex;
-    justify-content: center; // Centra el botón horizontalmente
-    margin-top: 20px;
-    align-items: center;
+    .boton-votacion {
 
-    .btn-votar {
-        background-color: steelblue;
-        color: white;
-        font-size: 1.2rem;
-        font-weight: bold;
-        padding: 12px 50px;
-        border: none;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: all 0.3s ease;
-
-        &:hover {
-            background-color: v.$color-verde; 
-        }
-
-        &:active {
-            transform: translateY(2px);
-        }
-    }
-}
-
-.grid-votacion {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-
-    // CORRECCIÓN DE MARGEN: 
-    width: 90%;
-    max-width: 800px;
-    margin: 40px auto;
-    // justify-items: stretch;
-    align-items: center;
-
-    // 2. EL CONTENEDOR (LABEL)
-    label {
-        cursor: pointer;
-        position: relative;
-        width: 100%;
-
-        // Hover accion de cambiar el cursor al pasar sobre la tarjeta
-        &:hover figcaption {
-            background-color: v.$color-hover;
-        }
-    }
-
-    // 3. LA TARJETA (FIGURE)
-    figure {
-        margin: 0;
-        position: relative;
-        border-radius: 10px;
-        overflow: hidden;
-        height: 100%;
-
-        // Flexbox para ordenar foto y texto
+        margin: 0 auto; // Centrado igual que la grilla
         display: flex;
-        flex-direction: column;
+        justify-content: center; // Centra el botón horizontalmente
+        margin-top: 20px;
+        align-items: center;
 
-        img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            // order: 1; 
-            display: block;
-        }
-
-        figcaption {
-            // order: 2; 
-            background-color: steelblue; // Color por defecto
+        .btn-votar {
+            background-color: steelblue;
             color: white;
-            padding: 15px;
-            text-align: center;
+            font-size: 1.2rem;
             font-weight: bold;
+            padding: 12px 50px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
             transition: all 0.3s ease;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+            &:hover {
+                background-color: v.$color-verde;
+            }
+
+            &:active {
+                transform: translateY(2px);
+            }
         }
     }
 
-    // 4. LÓGICA DE SELECCIÓN
-    .input-oculto {
-        display: none;
+    .grid-votacion {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
 
-        &:checked {
-            +figure {
-                // EFECTO SELECCIONADO
-                box-shadow: 0 0 0 4px v.$color-verde; // el color del borde al momento de ser seleccionado
-                transform: scale(1.02);
+        // CORRECCIÓN DE MARGEN: 
+        width: 90%;
+        max-width: 800px;
+        margin: 40px auto;
+        // justify-items: stretch;
+        align-items: center;
 
-                figcaption {
-                    background-color: v.$color-verde; // el color al momento de ser seleccionado
+        // 2. EL CONTENEDOR (LABEL)
+        label {
+            cursor: pointer;
+            position: relative;
+            width: 100%;
 
-                    &::after {
-                        content: " ✔";
-                        font-weight: bold;
-                        margin-left: 5px;
+            // Hover accion de cambiar el cursor al pasar sobre la tarjeta
+            &:hover figcaption {
+                background-color: v.$color-hover;
+            }
+        }
+
+        // 3. LA TARJETA (FIGURE)
+        figure {
+            margin: 0;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 100%;
+
+            // Flexbox para ordenar foto y texto
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                // order: 1; 
+                display: block;
+            }
+
+            figcaption {
+                // order: 2; 
+                background-color: steelblue; // Color por defecto
+                color: white;
+                padding: 15px;
+                text-align: center;
+                font-weight: bold;
+                transition: all 0.3s ease;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        // 4. LÓGICA DE SELECCIÓN
+        .input-oculto {
+            display: none;
+
+            &:checked {
+                +figure {
+                    // EFECTO SELECCIONADO
+                    box-shadow: 0 0 0 4px v.$color-verde; // el color del borde al momento de ser seleccionado
+                    transform: scale(1.02);
+
+                    figcaption {
+                        background-color: v.$color-verde; // el color al momento de ser seleccionado
+
+                        &::after {
+                            content: " ✔";
+                            font-weight: bold;
+                            margin-left: 5px;
+                        }
                     }
                 }
             }
         }
-    }
 
-    @include v.tablet {
-        // En tablet el espacio es poco. reducir margenes.
-        width: 95%;
-        margin: 20px auto; // Un poco menos de margen vertical
-        // hacer mas estrecho en tablets.
-        gap: 15px;
+        @include v.tablet {
+            // En tablet el espacio es poco. reducir margenes.
+            width: 95%;
+            margin: 20px auto; // Un poco menos de margen vertical
+            // hacer mas estrecho en tablets.
+            gap: 15px;
 
-        label:hover figcaption {
-            background-color: steelblue; // Vuelve al color original
+            label:hover figcaption {
+                background-color: steelblue; // Vuelve al color original
+            }
+
+            figure {
+                img {
+                    width: 100%;
+                    height: 100%; // llenar el alto
+                    // Elimina márgenes extraños
+                    display: block;
+                    margin: 0;
+                }
+            }
+
+
         }
 
-        figure {
-            img {
-                width: 100%;
-                height: 100%; // llenar el alto
-                // Elimina márgenes extraños
-                display: block;
-                margin: 0;
+        @include v.mobile {
+            grid-template-columns: 1fr;
+            gap: 10px;
+
+            // 1. REGLAS DEL CONTENEDOR (FIGURE)
+            figure {
+                img {
+                    width: 100%;
+                    height: 100%; // llenar el alto
+                    // object-fit: cover;   // Recorta el exceso para no deformar la foto
+                    // object-position: center;
+                    // Elimina márgenes extraños
+                    display: block;
+                    margin: 0;
+                }
+            }
+
+            label:hover figcaption {
+                background-color: steelblue;
             }
         }
-
-
     }
 
-    @include v.mobile {
-        grid-template-columns: 1fr;
-        gap: 10px;
 
-        // 1. REGLAS DEL CONTENEDOR (FIGURE)
-        figure {
-            img {
-                width: 100%;
-                height: 100%; // llenar el alto
-                // object-fit: cover;   // Recorta el exceso para no deformar la foto
-                // object-position: center;
-                // Elimina márgenes extraños
-                display: block;
-                margin: 0;
-            }
-        }
-
-        label:hover figcaption {
-            background-color: steelblue;
-        }
-    }
 }
-
-// arreglar un problema de borde negro en tablet

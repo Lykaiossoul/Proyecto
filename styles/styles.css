@@ -146,7 +146,7 @@ main form button {
 }
 
 section {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 section .animal-info {
   display: flex;
@@ -235,14 +235,17 @@ section .animal-texto {
     transform: translateY(40px);
   }
 }
-.boton-votacion {
+.zona-votacion {
+  margin-bottom: 40px;
+}
+.zona-votacion .boton-votacion {
   margin: 0 auto;
   display: flex;
   justify-content: center;
   margin-top: 20px;
   align-items: center;
 }
-.boton-votacion .btn-votar {
+.zona-votacion .boton-votacion .btn-votar {
   background-color: steelblue;
   color: white;
   font-size: 1.2rem;
@@ -253,14 +256,13 @@ section .animal-texto {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.boton-votacion .btn-votar:hover {
+.zona-votacion .boton-votacion .btn-votar:hover {
   background-color: #2F8A8A;
 }
-.boton-votacion .btn-votar:active {
+.zona-votacion .boton-votacion .btn-votar:active {
   transform: translateY(2px);
 }
-
-.grid-votacion {
+.zona-votacion .grid-votacion {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -269,15 +271,15 @@ section .animal-texto {
   margin: 40px auto;
   align-items: center;
 }
-.grid-votacion label {
+.zona-votacion .grid-votacion label {
   cursor: pointer;
   position: relative;
   width: 100%;
 }
-.grid-votacion label:hover figcaption {
+.zona-votacion .grid-votacion label:hover figcaption {
   background-color: #2936A3;
 }
-.grid-votacion figure {
+.zona-votacion .grid-votacion figure {
   margin: 0;
   position: relative;
   border-radius: 10px;
@@ -286,13 +288,13 @@ section .animal-texto {
   display: flex;
   flex-direction: column;
 }
-.grid-votacion figure img {
+.zona-votacion .grid-votacion figure img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   display: block;
 }
-.grid-votacion figure figcaption {
+.zona-votacion .grid-votacion figure figcaption {
   background-color: steelblue;
   color: white;
   padding: 15px;
@@ -301,31 +303,31 @@ section .animal-texto {
   transition: all 0.3s ease;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-.grid-votacion .input-oculto {
+.zona-votacion .grid-votacion .input-oculto {
   display: none;
 }
-.grid-votacion .input-oculto:checked + figure {
+.zona-votacion .grid-votacion .input-oculto:checked + figure {
   box-shadow: 0 0 0 4px #2F8A8A;
   transform: scale(1.02);
 }
-.grid-votacion .input-oculto:checked + figure figcaption {
+.zona-votacion .grid-votacion .input-oculto:checked + figure figcaption {
   background-color: #2F8A8A;
 }
-.grid-votacion .input-oculto:checked + figure figcaption::after {
+.zona-votacion .grid-votacion .input-oculto:checked + figure figcaption::after {
   content: " ✔";
   font-weight: bold;
   margin-left: 5px;
 }
 @media (min-width: 431px) and (max-width: 768px) {
-  .grid-votacion {
+  .zona-votacion .grid-votacion {
     width: 95%;
     margin: 20px auto;
     gap: 15px;
   }
-  .grid-votacion label:hover figcaption {
+  .zona-votacion .grid-votacion label:hover figcaption {
     background-color: steelblue;
   }
-  .grid-votacion figure img {
+  .zona-votacion .grid-votacion figure img {
     width: 100%;
     height: 100%;
     display: block;
@@ -333,17 +335,17 @@ section .animal-texto {
   }
 }
 @media (min-width: 320px) and (max-width: 430px) {
-  .grid-votacion {
+  .zona-votacion .grid-votacion {
     grid-template-columns: 1fr;
     gap: 10px;
   }
-  .grid-votacion figure img {
+  .zona-votacion .grid-votacion figure img {
     width: 100%;
     height: 100%;
     display: block;
     margin: 0;
   }
-  .grid-votacion label:hover figcaption {
+  .zona-votacion .grid-votacion label:hover figcaption {
     background-color: steelblue;
   }
 }
