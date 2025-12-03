@@ -235,6 +235,26 @@ section .animal-texto {
     transform: translateY(40px);
   }
 }
+.grid-peces-record {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin: 40px;
+  justify-items: center;
+  align-items: center;
+}
+.grid-peces-record img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.grid-peces-record figcaption {
+  text-align: center;
+  font-family: "Oldenburg", serif;
+  font-size: 1.3em;
+  margin-top: 10px;
+}
+
 .zona-votacion {
   margin-bottom: 40px;
 }

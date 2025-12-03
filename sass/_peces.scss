@@ -1,1 +1,24 @@
 @use "variables" as v;
+
+.grid-peces-record {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin: 40px;;
+    justify-items: center;
+    align-items: center;
+
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    figcaption {
+        text-align: center;
+        font-family: v.$fuente-subtitulos;
+        font-size: 1.3em;
+        margin-top: 10px;
+    }
+}
